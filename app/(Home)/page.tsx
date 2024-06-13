@@ -3,10 +3,13 @@ import NavBar from "./components/navBar";
 import Header from "./components/Header";
 import { BackgroundBeams } from "./components/background-beams";
 import Services from "./components/services";
-import Ispiring from "./components/ispiring";
+import Inspiring from "./components/inspiring";
+import { Projects } from "./components/Projects";
+import { WobbleCardDemo } from "./components/bento";
+
 export default function page() {
   return (
-    <div className="min-h-screen ">
+    <div>
       <div className="relative">
         <div className="w-[90%] h-screen mx-auto">
           <NavBar />
@@ -14,10 +17,14 @@ export default function page() {
         </div>
         <BackgroundBeams className=" absolute -z-10 " />
       </div>
-      <div className="w-[90%] h-screen mx-auto overflow-hidden ">
+      <div className="w-[90%] mx-auto  ">
         <Services />
-        <Ispiring />
-      </div>
+        <Inspiring />
+        <Projects />
+
+        <WobbleCardDemo />
+      </div>{" "}
+      <p className="text-center my-10">Made by zeus</p>
     </div>
   );
 }
